@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>BT5 HW</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#myscrollSpy" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+<!-- Navbar header start -->
+  <header class="header bg-dark sticky-top" id="myscrollSpy">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark  " id="home">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="index.html">M.RAHAT</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         
+          
+          <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- navbar menu start -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header-menu">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#services">Services <span><i class="fas fa-arrow-down"></i></span> </a>
+                  <ul class="">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">HTML CLASSES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#htmlcss">CSS CLASSES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#bootstrap">BOOTSTRAP CLASSES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#javascript">JAVASCRIPT CLASSES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#wordpress">WORDPRESS CLASSES</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                </li>
+           
+              </ul>
+               <!-- navbar menu end -->
+
+              <form class="d-flex">
+                <input class="form-control me-2 custom-btn2" type="search" placeholder="Search" aria-label="Search">             
+              </form>
+         
+
+              <!--sign in modal start --> 
+              <!-- modal button -->
+              <button class="btn btn-outline-success hcustom-btn" type="button" data-bs-toggle="modal" data-bs-target="#modalExample1" data-bs-whatever="Email">Sign in</button>                       
+                <div class="modal my-modal fade " id="modalExample1" tabindex="-1" aria-labelledby="myEllm" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content bg-dark text-light">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="myEllm">Please Sign Up Your Account </h5>
+                        <button type="button" class="btn-close btn-light bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="fname" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Your first name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="lname" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Your last name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Type your email address">
+                          </div>
+                          <div class="mb-3">
+                            <label for="pass" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="pass" placeholder="Password">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Message"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger">Send message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!--sign in modal end -->
+              
+           
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+<!-- Navbar header end -->
+
+
+<!-- 1st slider start -->
+  <section class="slider-section" id="">
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col lg">
+          <div id="carouselPreNext" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-indicators cc-indicators">
+
+              <button type="button" data-bs-target="#carouselPreNext" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselPreNext" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselPreNext" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+              <!-- carousel item 1 -->
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./imgs/slider1.jpg" class="d-block w-100"  alt="...">
+                <div class="carousel-caption custom-slider-caption d-none d-md-block">
+                  <h1>First slide label</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis esse voluptatibus aperiam molestiae aut! Neque assumenda minus doloribus? Perspiciatis, similique?</p>
+                </div>
+              </div>
+
+              <!-- carousel item 2 -->
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./imgs/slider2.jpg" class="d-block w-100"  alt="...">
+                <div class="carousel-caption custom-slider-caption d-none d-md-block">
+                  <h1>First slide label</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis esse voluptatibus aperiam molestiae aut! Neque assumenda minus doloribus? Perspiciatis, similique?</p>
+                </div>
+              </div>
+
+              <!-- carousel item 3 -->
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./imgs/slider3.jpg" class="d-block w-100"  alt="...">
+                <div class="carousel-caption custom-slider-caption d-none d-md-block">
+                  <h1>First slide label</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis esse voluptatibus aperiam molestiae aut! Neque assumenda minus doloribus? Perspiciatis, similique?</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- c next pre button -->
+            <button class="carousel-control-prev cc-prev" type="button" data-bs-target="#carouselPreNext" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next cc-next" type="button" data-bs-target="#carouselPreNext" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 1st slider end -->
+
+  <section class="about-me py-5" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <div class="about-text w-75 m-auto text-center">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, reiciendis? Neque labore tempore aspernatur exercitationem! Expedita facilis nihil quo et fugiat deleniti harum dolores in, ipsam quam eius minus aut.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- slider 2 start -->
+  <section class="slider2">
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="slider2-text text-center text-white">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente rem blanditiis nulla asperiores dignissimos. Dolorem amet voluptatum corporis sint optio cum assumenda porro, repellat possimus necessitatibus, alias eius harum nesciunt!</p>
+            <button type="button" class="btn btn-danger btn-lg">Load More</button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+            <!-- carousel indicator -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+            </div>
+
+            <div class="carousel-inner">
+
+              <!-- c item 1 -->
+              <div class="carousel-item active" data-bs-interval="4000">
+                <div class="slider-bg">
+                  <div class="slider-text text-white text-center">
+                    <div class="s-img">
+                      <img class="img-fluid" src="./imgs/11kk114.jpg" alt="">
+                    </div>
+                    <h1>It's me Mohammad Rahat</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est quo, dolorem illo vel voluptatum blanditiis dolore dolores.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- c item 2 -->
+                <div class="carousel-item " data-bs-interval="2000">
+                  <div class="slider-bg">
+                    <div class="slider-text text-white text-center">
+                      <div class="s-img">
+                        <img class="img-fluid" src="./imgs/11kk114.jpg" alt="">
+                      </div>
+                      <h1>It's me Mohammad Rahat</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est quo, dolorem illo vel voluptatum blanditiis dolore dolores.</p>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- c item 3 -->
+              <div class="carousel-item " data-bs-interval="1500">
+                <div class="slider-bg">
+                  <div class="slider-text text-white text-center">
+                    <div class="s-img">
+                      <img class="img-fluid" src="./imgs/11kk114.jpg" alt="">
+                    </div>
+                    <h1>It's me Mohammad Rahat</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est quo, dolorem illo vel voluptatum blanditiis dolore dolores.</p>
+                  </div>
+                </div>
+              </div>
+                            
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- slider 2 end -->
+
+
+  <!-- nav tab start -->
+  <section class="nav-tab py-5" id="blog">
+      <div class="row">
+      <h1 class="text-primary text-center mb-5">Nav Tab Pill</h1>
+        <div class="col-lg">
+          <div class="navtab">
+            <ul class="nav nav-pills n-pill justify-content-center mb-5" id="pills-tab" role="tablist">
+              <!-- nav item 1 -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link n-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Menu One</button>
+              </li>
+              <!-- nav item 2 -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link n-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Menu Two</button>
+              </li>
+              <!-- nav item 3 -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link n-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Menu Three</button>
+              </li>
+            </ul>
+            <!-- nav content -->
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                    <div class="col-lg-3 ">
+                     <div class="menu-box">
+                      <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                      <div class="f-text text-center">
+                        <h2>Spaghetti with Grilled Mackerel</h2>
+                        <h3>$50</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 ">
+                      <div class="menu-box">
+                       <img class="img-fluid" src="./imgs/food-dish-06(2).png" alt="">
+                       <div class="f-text text-center">
+                         <h2>Spaghetti with Grilled Mackerel</h2>
+                         <h3>$50</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="col-lg-3 ">
+                      <div class="menu-box">
+                       <img class="img-fluid" src="./imgs/food3-free-img(2).png" alt="">
+                       <div class="f-text text-center">
+                         <h2>Spaghetti with Grilled Mackerel</h2>
+                         <h3>$50</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="col-lg-3 ">
+                      <div class="menu-box">
+                       <img class="img-fluid" src="./imgs/food4-free-img(2).png" alt="">
+                       <div class="f-text text-center">
+                         <h2>Spaghetti with Grilled Mackerel</h2>
+                         <h3>$50</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                       </div>
+                      </div>
+                     </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                  <div class="col-lg-3 ">
+                     <div class="menu-box">
+                      <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                      <div class="f-text text-center">
+                        <h2>Spaghetti with Grilled Mackerel</h2>
+                        <h3>$50</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 ">
+                      <div class="menu-box">
+                       <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                       <div class="f-text text-center">
+                         <h2>Spaghetti with Grilled Mackerel</h2>
+                         <h3>$50</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="col-lg-3 ">
+                      <div class="menu-box">
+                       <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                       <div class="f-text text-center">
+                         <h2>Spaghetti with Grilled Mackerel</h2>
+                         <h3>$50</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="col-lg-3 ">
+                      <div class="menu-box">
+                       <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                       <div class="f-text text-center">
+                         <h2>Spaghetti with Grilled Mackerel</h2>
+                         <h3>$50</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                       </div>
+                      </div>
+                     </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row">
+                  <div class="col-lg-3 ">
+                    <div class="menu-box">
+                     <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                     <div class="f-text text-center">
+                       <h2>Spaghetti with Grilled Mackerel</h2>
+                       <h3>$50</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-3  mb-4">
+                    <div class="menu-box">
+                     <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                     <div class="f-text text-center">
+                       <h2>Spaghetti with Grilled Mackerel</h2>
+                       <h3>$50</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-3  mb-4">
+                    <div class="menu-box">
+                     <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                     <div class="f-text text-center">
+                       <h2>Spaghetti with Grilled Mackerel</h2>
+                       <h3>$50</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-3  mb-4">
+                    <div class="menu-box">
+                     <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                     <div class="f-text text-center">
+                       <h2>Spaghetti with Grilled Mackerel</h2>
+                       <h3>$50</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-3  mb-4">
+                    <div class="menu-box">
+                     <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                     <div class="f-text text-center">
+                       <h2>Spaghetti with Grilled Mackerel</h2>
+                       <h3>$50</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-3  mb-4">
+                    <div class="menu-box">
+                     <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                     <div class="f-text text-center">
+                       <h2>Spaghetti with Grilled Mackerel</h2>
+                       <h3>$50</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-3 mb-4">
+                    <div class="menu-box">
+                     <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                     <div class="f-text text-center">
+                       <h2>Spaghetti with Grilled Mackerel</h2>
+                       <h3>$50</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-3 mb-4">
+                    <div class="menu-box">
+                     <img class="img-fluid" src="./imgs/food5-free-img(2).png" alt="">
+                     <div class="f-text text-center">
+                       <h2>Spaghetti with Grilled Mackerel</h2>
+                       <h3>$50</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias.</p>
+                     </div>
+                    </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- nav tab end -->
+
+  <section class="nav-tab2 pb-5" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center pb-5 text-primary">Vartical Nav Tab Pill</h1>
+        <div class="col-lg">
+          <div class="navTab2">
+
+            <div class="d-flex align-items-start">
+
+              <div class="nav flex-column nav-pills n2-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                <button class="nav-link n2-link active" id="v-nabtav1" data-bs-toggle="pill" data-bs-target="#v-homes" type="button" role="tab" aria-controls="v-homes" aria-selected="true">All</button>
+
+                <button class="nav-link n2-link" id="v-navtab2" data-bs-toggle="pill" data-bs-target="#v-profiles" type="button" role="tab" aria-controls="v-profiles" aria-selected="false">Profile</button>
+
+                <button class="nav-link n2-link" id="v-navtab3" data-bs-toggle="pill" data-bs-target="#v-messages" type="button" role="tab" aria-controls="v-messages" aria-selected="false">Messages</button>
+
+                <button class="nav-link n2-link" id="v-navtab-4" data-bs-toggle="pill" data-bs-target="#v-settings" type="button" role="tab" aria-controls="v-settings" aria-selected="false">Settings</button>
+
+              </div>
+
+              <div class="tab-content" id="v-pills-tabContent">
+
+                <div class="tab-pane fade show active" id="v-homes" role="tabpanel" aria-labelledby="v-nabtav1">
+
+                  <div class="row">
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-1.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-2.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-3.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-4.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-5.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-7.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-8.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-6.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-profiles" role="tabpanel" aria-labelledby="v-navtab2">
+                  <div class="row">
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-1.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-2.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-3.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-9.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-messages" role="tabpanel" aria-labelledby="v-navtab3">
+                  <div class="row">
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-5.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-2.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-3.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 pb-4">
+                      <div class="p-item">
+                        <img class="img-fluid" src="./imgs/p-7.png" alt="">
+                        <div class="p-inner">
+                          <button type="button" class="btn custom-btn">View Full Page</button>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-settings" role="tabpanel" aria-labelledby="v-navtab-4">...</div>
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="tooltips py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="text-center text-primary">Progress Bar</h2>
+        <h4>HTML</h4>
+        <div class="progress mb-4">
+          <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">100%</div>
+        </div>
+        <h4>HTML</h4>
+        <div class="progress mb-4">
+          <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">50%</div>
+        </div>
+        <h4>HTML</h4>
+        <div class="progress mb-4">
+          <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+        <h4>HTML</h4>
+        <div class="progress mb-4">
+          <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">90%</div>
+        </div>
+        <h4>HTML</h4>
+        <div class="progress mb-4">
+          <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">95%</div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="text-center text-danger mb-4">Tooltips</h2>
+        <div class="my-tooltip d-flex justify-content-between">
+
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+            Tooltip on top
+          </button>
+  
+          <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+            Tooltip on right
+          </button>
+  
+          <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+            Tooltip on bottom
+          </button>
+  
+          <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+            Tooltip on left
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>
